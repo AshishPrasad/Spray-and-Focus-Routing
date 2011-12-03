@@ -1,0 +1,36 @@
+Naming Conventions: Based on MANET routing protocol
+--------------------------------------------------------------------
+General Guideline
+--------------------------------------------------------------------
+protoname_pkt 	: sr_pkt
+PROTONAME_PKT 	: SR_PKT
+Protoname	: Sr
+PROTONAME	: SR
+
+--------------------------------------------------------------------
+protoname/protoname_pkt.h   : sr/sr_packet.h
+--------------------------------------------------------------------
+protoname_pkt_h             : sr_pkt_h
+HDR_PROTONAME_PKT           : HDR_SR_PKT
+struct hdr_protoname_pkt    : struct hdr_sr_pkt
+
+--------------------------------------------------------------------
+protoname/protoname.cc      : sr/sr.cc
+--------------------------------------------------------------------
+class ProtonameHeaderClass  : class SrHeaderClass
+PacketHeader/Protoname      : PacketHeader/Sr
+hdr_protoname_pkt	    : hdr_sr_pkt
+class_rtProtoProtoname_hdr  : class_rtProtoSr_hdr
+class ProtonameClass        : class SrClass
+
+--------------------------------------------------------------------
+protoname/protoname.h       		: sr/sr.h
+--------------------------------------------------------------------
+__protoname_h__				: __sr_h__
+class Protoname				: class SR
+class Protoname_PktTimer		: class SR_PktTimer
+Protoname_PktTimer pkt_timer_		: SR_PktTimer pkt_timer_
+void recv_protoname_pkt(Packet*)	: void recv_sr_pkt(Packet*)
+void send_protoname_pkt()		: void send_sr_pkt();
+void reset_protoname_pkt_timer()	: void reset_sr_pkt_timer();
+--------------------------------------------------------------------
